@@ -1,0 +1,11 @@
+# Never commit secrets
+*.secret
+secrets.yaml
+options.json
+.env
+
+# OS / editor
+.DS_Store
+__pycache__/
+*.pyc
+.vscode/

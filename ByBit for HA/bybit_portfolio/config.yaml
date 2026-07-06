@@ -1,0 +1,30 @@
+---
+name: Bybit EU Portfolio
+version: 0.1.0
+slug: bybit_portfolio
+description: Read-only Bybit EU account reporting — wallet balances, bonus and recent transactions as Home Assistant sensors
+url: https://github.com/jannetu/ha-bybit
+arch:
+  - amd64
+  - aarch64
+  - armv7
+init: false
+homeassistant_api: true
+options:
+  api_key: ""
+  api_secret: ""
+  poll_interval: 60
+  transaction_count: 10
+  sensor_prefix: bybit
+  log_level: info
+schema:
+  api_key: str
+  api_secret: password
+  poll_interval: int(15,3600)
+  transaction_count: int(1,50)
+  sensor_prefix: str
+  log_level:
+    - debug
+    - info
+    - warning
+    - error
