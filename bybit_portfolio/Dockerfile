@@ -1,11 +1,10 @@
-ARG BUILD_FROM
-FROM $BUILD_FROM
+FROM python:3.12-alpine
 
-RUN pip3 install --no-cache-dir requests==2.32.3
+ENV PYTHONUNBUFFERED=1
 
-COPY run.sh /
-COPY app /app
+RUN apk add --no-cache tzdata \
+ && pip install --no-cache-dir requests
 
-RUN chmod a+x /run.sh
+COPY app/main.py /
 
-CMD ["/run.sh"]
+CMD ["python3", "/main.py"]
