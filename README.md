@@ -5,7 +5,7 @@ Home Assistant add-on repository for **read-only** Bybit EU account reporting: w
 ## Installation
 
 1. Home Assistant → Settings → Add-ons → Add-on Store → ⋮ → **Repositories**
-2. Add: `https://github.com/jannetu/ha-bybit`
+2. Add: `https://github.com/turpela/ha-bybit`
 3. Install **Bybit EU Portfolio**, enter your read-only API key/secret in the Configuration tab, start.
 
 See [bybit_portfolio/DOCS.md](bybit_portfolio/DOCS.md) for full documentation.

@@ -3,7 +3,7 @@ name: Bybit EU Portfolio
 version: 0.1.0
 slug: bybit_portfolio
 description: Read-only Bybit EU account reporting — wallet balances, bonus and recent transactions as Home Assistant sensors
-url: https://github.com/jannetu/ha-bybit
+url: https://github.com/turpela/ha-bybit
 arch:
   - amd64
   - aarch64
