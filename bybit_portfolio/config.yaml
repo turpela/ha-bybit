@@ -1,13 +1,12 @@
 ---
 name: Bybit EU Portfolio
-version: 0.1.1
+version: 0.1.2
 slug: bybit_portfolio
 description: Read-only Bybit EU account reporting — wallet balances, bonus and recent transactions as Home Assistant sensors
 url: https://github.com/turpela/ha-bybit
 arch:
   - amd64
   - aarch64
-  - armv7
 startup: application
 boot: auto
 init: false
@@ -25,8 +24,4 @@ schema:
   poll_interval: int(15,3600)
   transaction_count: int(1,50)
   sensor_prefix: str
-  log_level:
-    - debug
-    - info
-    - warning
-    - error
+  log_level: list(debug|info|warning|error)

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- Fix schema rejected by Supervisor: `log_level` enum now `list(debug|info|warning|error)`; drop deprecated `armv7` arch.
+
 ## 0.1.1
 
 - Align build with proven ha-kcal-balance pattern: plain `python:3.12-alpine` Dockerfile (no build.yaml/bashio), add `startup: application` and `boot: auto`.
